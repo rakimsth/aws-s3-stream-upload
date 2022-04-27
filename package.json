@@ -1,0 +1,37 @@
+{
+  "name": "waste-mgmt-system",
+  "author": "Raktim Shrestha and Uttam Raj Giri",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon ./bin/www",
+    "production": "NODE_ENV=production node ./bin/www",
+    "client": "cd ./client && yarn start",
+    "setup": "yarn && cd ./client && yarn",
+    "lint": "eslint --fix .",
+    "format": "prettier -w ."
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1121.0",
+    "bcrypt": "^5.0.1",
+    "busboy": "^1.6.0",
+    "config": "^3.3.7",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  }
+}
