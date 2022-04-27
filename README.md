@@ -5,7 +5,9 @@
 - create the folder called `config`
 - Inside config, create `local.json` and copy the `.env.example` file and paste it in the local.json with your secrets.
 
-- run using `yarn start`
+#### Start the server
+
+- run using `yarn start` or `npm run start`
 - Use /upload (POST) route to upload the multipart form data. You will receive JSON object, save the key attribute.
 - Use /getSignedUrl (GET) route to get the signed file. Pass the key you have stored from the above route in the body.
 
