@@ -1,3 +1,10 @@
-# waste_mgmt_system
+# AWS S3 Upload By Stream
 
-A system solution for managing your Household Wastes, Institutional and Commercial Wastes, Municipal Solid Waste with Municipal Solid Waste sorting waste streams feature. Use our software to track and manage your special waste approvals, generate and track your non-hazardous manifests, create scale tickets at your POS, upload hazardous waste manifests to the EPA, and report on all of the above. Whether you're a generator, transporter, or landfill operator, We plan to offer the only fully digital, cradle-to-grave experience for waste industry professionals.
+- run using `yarn start`
+-
+- Use /upload (POST) route to upload the multipart form data. You will receive JSON object, save the key attribute.
+- Use /getSignedUrl (GET) route to get the signed file. Pass the key you have stored from the above route in the body.
+
+### NOTE
+
+By default the signed file will be available for only 1 Hour. You can change the duration between 1 hr to 12 hr.
